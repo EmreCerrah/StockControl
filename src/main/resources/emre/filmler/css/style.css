@@ -1,0 +1,24 @@
+.root {
+    -fx-background-color: #b0bec5 blue-grey lighten-3;
+}
+.label {
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #37474f blue-grey darken-3;
+    -fx-effect: dropshadow( gaussian , rgba(255,255,255,0.5) , 0,0,0,1 );
+}
+.lists{
+    -fx-background-color: #eceff1 blue-grey lighten-5;
+}
+
+.border {
+-fx-border-style: solid none none none;
+-fx-border-width: 2px;
+-fx-border-color: grey;
+}
+
+.fullborder{
+-fx-border-style: solid none solid none;
+-fx-border-width: 2px;
+-fx-border-color: grey;
+}

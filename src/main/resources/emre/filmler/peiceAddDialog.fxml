@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="300.0" prefWidth="600.0" styleClass="root" stylesheets="@css/style.css" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="emre.Stock.NewPeiceController">
+   <children>
+      <Label layoutX="21.0" layoutY="14.0" prefHeight="51.0" prefWidth="192.0" text="Parça Adı :" />
+      <Label layoutX="21.0" layoutY="145.0" text="Parçanın Detayı :" />
+      <Label layoutX="21.0" layoutY="232.0" prefHeight="17.0" prefWidth="104.0" text="Parça Adet:" />
+      <TextField fx:id="peiceName" layoutX="168.0" layoutY="27.0" prefHeight="25.0" prefWidth="375.0" styleClass="lists" stylesheets="@css/style.css" />
+      <TextArea fx:id="peiceDetail" layoutX="168.0" layoutY="100.0" prefHeight="106.0" prefWidth="375.0" styleClass="lists" stylesheets="@css/style.css" />
+      <TextField fx:id="pieceNumber" layoutX="168.0" layoutY="228.0"  styleClass="lists" stylesheets="@css/style.css" />
+   </children>
+</AnchorPane>
