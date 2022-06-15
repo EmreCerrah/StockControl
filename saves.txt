@@ -1,1 +1,2 @@
-SOMUN//detay//40
+ÖRNEK//Örnek Firma, Detay...//100
+YENI ÖRNEK//Detay notu.//500

@@ -24,7 +24,7 @@
                 <Menu mnemonicParsing="false" text="Dosya">
                     <items>
                         <MenuItem mnemonicParsing="false" onAction="#newPiece" text="Yeni Parça Ekle" />
-                        <MenuItem mnemonicParsing="false" onAction="#newProduct" text="Yeni Ürün Ekle" />
+                        <MenuItem mnemonicParsing="false" onAction="#newProduct" text="Yeni Parça Listesi" />
                         <SeparatorMenuItem mnemonicParsing="false" />
                         <MenuItem mnemonicParsing="false" onAction="#printPDF" text="Stok Listesini Yazdır" />
                         <SeparatorMenuItem mnemonicParsing="false" />
@@ -103,7 +103,7 @@
                       <HBox alignment="BOTTOM_RIGHT" prefHeight="110.0" prefWidth="493.0" styleClass="border">
                           <children>
                         <Label fx:id="buildLabel" prefHeight="29.0" prefWidth="199.0" />
-                              <Button fx:id="buildProduct" mnemonicParsing="false" onAction="#buildProductAction" prefHeight="30.0" prefWidth="137.0" stylesheets="@css/style.css" text="Ürünü Üret!" />
+                              <Button fx:id="buildProduct" mnemonicParsing="false" onAction="#buildProductAction" prefHeight="30.0" prefWidth="137.0" stylesheets="@css/style.css" text="Parçaları Çıkar!" />
                           </children>
                           <opaqueInsets>
                               <Insets />
