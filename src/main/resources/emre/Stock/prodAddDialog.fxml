@@ -16,10 +16,10 @@
       <ListView fx:id="itemList" layoutX="14.0" layoutY="83.0" prefHeight="344.0" prefWidth="200.0" />
       <ListView fx:id="productList" layoutX="562.0" layoutY="83.0" prefHeight="344.0" prefWidth="200.0" />
       <Label layoutX="81.0" layoutY="52.0" text="Parça listesi" />
-      <Label layoutX="622.0" layoutY="52.0" text="Ürün Parçaları" />
+      <Label layoutX="622.0" layoutY="52.0" text="Çıkarılacak Parça listesi" />
       <VBox alignment="CENTER" layoutX="212.0" layoutY="154.0" prefHeight="68.0" prefWidth="352.0" styleClass="border" stylesheets="@css/style.css">
          <children>
-            <Label prefHeight="17.0" prefWidth="188.0" text="Eklenecek parça sayısını giriniz" />
+            <Label prefHeight="17.0" prefWidth="188.0" text="Listeye eklenecek parça sayısını giriniz" />
             <TextField fx:id="addedNumber" prefHeight="25.0" prefWidth="188.0" promptText="Parça Adet">
                <VBox.margin>
                   <Insets left="50.0" right="50.0" />
@@ -27,7 +27,7 @@
             </TextField>
          </children>
       </VBox>
-      <Label layoutX="562.0" layoutY="435.0" prefHeight="17.0" prefWidth="137.0" text="Gereken Parça Sayısı:" />
+      <Label layoutX="562.0" layoutY="435.0" prefHeight="17.0" prefWidth="137.0" text="Listedeki Parça Sayısı:" />
       <Label fx:id="productPeiceNumber" layoutX="703.0" layoutY="435.0" prefHeight="17.0" prefWidth="71.0" text="Label" />
       <VBox alignment="CENTER" layoutX="212.0" layoutY="221.0" prefHeight="120.0" prefWidth="352.0" styleClass="border" stylesheets="@css/style.css">
          <children>

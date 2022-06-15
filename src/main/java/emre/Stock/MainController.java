@@ -151,7 +151,7 @@ public class MainController implements Initializable {
         FXMLLoader fxmlLoader = new FXMLLoader();
         fxmlLoader.setLocation(getClass().getResource("prodAddDialog.fxml"));
 
-        dialog.setTitle("Yeni Ürün Ekle");
+        dialog.setTitle("Yeni Liste Oluştur");
         dialog.getDialogPane().setContent(fxmlLoader.load());
 
 
@@ -166,7 +166,7 @@ public class MainController implements Initializable {
                 NewProdController dialogController = fxmlLoader.getController();
                 productList = dialogController.productList;
                 buildProduct.setDisable(false);
-                buildLabel.setText("Ürün üretilmeye hazır");
+                buildLabel.setText("Liste hazır");
 
             } catch (Exception e) {
                 e.printStackTrace();
