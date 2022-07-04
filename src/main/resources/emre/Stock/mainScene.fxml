@@ -24,7 +24,7 @@
                 <Menu mnemonicParsing="false" text="Dosya">
                     <items>
                         <MenuItem mnemonicParsing="false" onAction="#newPiece" text="Yeni Parça Ekle" />
-                        <MenuItem mnemonicParsing="false" onAction="#newProduct" text="Yeni Parça Listesi" />
+                        <MenuItem mnemonicParsing="false" onAction="#newProduct" text="Çoklu Parça Listesi" />
                         <SeparatorMenuItem mnemonicParsing="false" />
                         <MenuItem mnemonicParsing="false" onAction="#printPDF" text="Stok Listesini Yazdır" />
                         <SeparatorMenuItem mnemonicParsing="false" />
