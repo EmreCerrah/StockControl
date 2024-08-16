@@ -1,4 +1,4 @@
-package emre.Stock;
+package tr.com.stockmanagementapp;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
@@ -12,7 +12,7 @@ public class App extends Application {
     @Override
     public void init() throws Exception {
         super.init();
-        DataStock.getInstance().loadItems();
+//        DataStock.getInstance().loadProducts();
     }
 
     @Override
@@ -31,7 +31,7 @@ public class App extends Application {
 
     @Override
     public void stop() throws Exception {
-        DataStock.getInstance().saveItems();
+//        DataStock.getInstance().saveProducts();
         super.stop();
 
     }
