@@ -13,6 +13,7 @@ public class Main {
 //        App.main(args);
         ApplicationContext context = new AnnotationConfigApplicationContext(AppConfig.class);
         StockService stockService = context.getBean(StockService.class);
+        
 
         // Yeni bir Product ve StockItem oluştur ve ayarla
         Product product = new Product("Example Product", "Product Details", 10);

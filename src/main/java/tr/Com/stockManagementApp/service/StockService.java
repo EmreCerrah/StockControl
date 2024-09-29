@@ -11,12 +11,20 @@ import java.util.List;
 
 @Service
 public class StockService {
-
+  
+    private final StockRepository stockRepository;
     @Autowired
-    private ProductRepository productRepository;
-
+    public StudentService(StockRepository stockRepository) {
+        this.stockRepository = stockRepository;
+    }
 
     public List<Product> getAllProducts() {
-        return productRepository.findAll();
+        return stockRepository.findAll();
+    }
+    public void saveProducts(StockItem stockItem) {
+        stockRepository.save(stockItem);
+    }
+    public void getStock(Long productId, int quantity) {
+        stockRepository.findByProductId(productId);
     }
 }

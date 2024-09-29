@@ -7,15 +7,8 @@ import java.util.HashMap;
 import java.util.Map;
 
 @Repository
-public class StockRepository {
-    private Map<Long, StockItem> stockMap = new HashMap<>();
-
-    public StockItem save(StockItem stockItem) {
-        stockMap.put(stockItem.getProduct().getId(), stockItem);
-        return stockItem;
-    }
-
-    public StockItem findByProductId(Long productId) {
-        return stockMap.get(productId);
-    }
+public interface StockRepository extends JpaRepository<StockItem, Long> {
+    
+    @Query("SELECT s FROM stock s WHERE s.id=?")
+    public StockItem findByProductId(Long productId);
 }
