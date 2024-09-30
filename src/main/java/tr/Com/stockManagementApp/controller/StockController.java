@@ -6,6 +6,8 @@ import tr.com.stockmanagementapp.model.Product;
 import tr.com.stockmanagementapp.model.StockItem;
 import tr.com.stockmanagementapp.service.StockService;
 
+import java.util.List;
+
 @Controller // RestController olsaydi URL uzerinden HTTP olusturulacakti
 public class StockController {
     /// bu sinif direkt swing ile iletisime gececek olan sinif burdan modeller olusturulacak.
@@ -17,15 +19,9 @@ public class StockController {
         this.stockService = stockService;
     }
 
-    public Product createProduct(String name, double price) {
-        return StockService.addProduct(name, price);
+    public List<StockItem> getStock(String name, double price) {
+        return stockService.getAllProducts();
     }
 
-    public StockItem updateStock(Long productId, int quantity) {
-        return StockService.addStock(productId, quantity);
-    }
-
-    public StockItem viewStock(Long productId) {
-        return StockService.getStock(productId);
-    }
+   
 }

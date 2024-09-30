@@ -12,13 +12,13 @@ public class Main {
     public static void main(String[] args) {
 //        App.main(args);
         ApplicationContext context = new AnnotationConfigApplicationContext(AppConfig.class);
-        StockService stockService = context.getBean(StockService.class);
-        
+        StockController stockController = context.getBean(StockController.class);
+        System.out.print(stockController);
 
-        // Yeni bir Product ve StockItem oluştur ve ayarla
-        Product product = new Product("Example Product", "Product Details", 10);
-        StockItem stockItem = new StockItem(product);
-        stockItem.setQuantity(2);
+//        // Yeni bir Product ve StockItem oluştur ve ayarla
+//        Product product = new Product("Example Product", "Product Details", 10);
+//        StockItem stockItem = new StockItem(product);
+//        stockItem.setQuantity(2);
 
     }
 }

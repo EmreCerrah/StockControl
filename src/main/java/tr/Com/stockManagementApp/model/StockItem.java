@@ -20,4 +20,8 @@ public class StockItem {
     private Product product;
     @Column(name="quantity",columnDefinition = "INTEGER")
     private int quantity;
+
+    public StockItem() {
+        
+    }
 }
