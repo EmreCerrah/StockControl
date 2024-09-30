@@ -11,7 +11,7 @@ import tr.com.stockmanagementapp.model.StockItem;
 public class AppConfig {
     @Bean
     public Product product(){
-        return new Product("1","1",1);
+        return new Product(1L,"1","1" ,1);
     }
     @Bean
     public StockItem stockItem(){
