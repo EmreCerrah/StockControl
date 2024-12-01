@@ -2,7 +2,6 @@ package tr.com.stockmanagementapp.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import tr.com.stockmanagementapp.model.Product;
 import tr.com.stockmanagementapp.model.StockItem;
 import tr.com.stockmanagementapp.service.StockService;
 

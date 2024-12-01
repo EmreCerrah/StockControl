@@ -6,7 +6,6 @@ import lombok.NonNull;
 import lombok.RequiredArgsConstructor;
 
 @Data
-@RequiredArgsConstructor
 @Entity
 @Table(name = "stock")
 public class StockItem {
@@ -21,7 +20,10 @@ public class StockItem {
     @Column(name="quantity",columnDefinition = "INTEGER")
     private int quantity;
 
-    public StockItem() {
-        
+    public StockItem (){
+    }
+    public StockItem ( Product product,int quantity){
+        this.product=product;
+        this.quantity=quantity;
     }
 }

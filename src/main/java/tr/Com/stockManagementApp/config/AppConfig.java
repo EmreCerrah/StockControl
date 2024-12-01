@@ -7,14 +7,14 @@ import tr.com.stockmanagementapp.model.Product;
 import tr.com.stockmanagementapp.model.StockItem;
 
 @Configuration
-@ComponentScan(basePackages = "com.stockmanagement")
+@ComponentScan(basePackages = "tr.com.stockmanagementapp")
 public class AppConfig {
     @Bean
     public Product product(){
-        return new Product(1L,"1","1" ,1);
+        return new Product("1","1" ,1);
     }
     @Bean
     public StockItem stockItem(){
-        return new StockItem(product());
+        return new StockItem(product(),1);
     }
 }
